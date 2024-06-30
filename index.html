@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawam</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f34c50b035.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation Section -->
+    <section id="navbar_section">
+        <nav>
+            <img src="images/dawam2.png" alt="dawam" data-lang="ar" class="logoAr">
+            <img src="images/dawam4.png" alt="dawam" data-lang="fr" style="display: none;" class="logoNotar logoFr">
+            <img src="images/dawam4.png" alt="dawam" data-lang="en" style="display: none;" class="logoNotar logoEn">
+            <ul>
+                <li class="selected" data-lang="ar">الرئيسية</li>
+                <li data-lang="ar">استفسارات</li>
+                <li data-lang="ar">اتصل بنا</li>
+
+                <li class="selected" data-lang="fr" style="display: none;">Accueil</li>
+                <li class="fr lt" data-lang="fr" style="display: none;">Questions</li>
+                <li class="fr lt" data-lang="fr" style="display: none;">Contact</li>
+
+                <li class="selected" data-lang="en" style="display: none;">Home</li>
+                <li class="en lt" data-lang="en" style="display: none;">Inquiries</li>
+                <li class="en lt" data-lang="en" style="display: none;">Contact Us</li>
+            </ul>
+            <div id="shop">
+        
+                <select name="" id="products" data-lang="ar" >
+                    <optgroup>
+                        <option disabled selected>فئات المنتجات</option>
+                        <option value="" data-lang="ar">خشب</option>
+                        <option value="" data-lang="ar">بلاستيك</option>
+                        <option value="" data-lang="ar">حديد</option>
+                        <option value="" data-lang="ar">نحاس</option>
+                        <option value="" data-lang="ar">زجاج</option>
+                        <option value="" data-lang="ar">ورق</option>
+                        <option value="" data-lang="ar">منسوجات</option>
+                        <option value="" data-lang="ar">إلكترونيات</option>
+                    </optgroup>
+                </select>
+                
+                <select name="" id="products" data-lang="fr" style="display: none;">
+                    <optgroup>
+                        <option disabled selected>Catégories des produits</option>
+                        <option value="" data-lang="fr" style="display: none;">Bois</option>
+                        <option value="" data-lang="fr" style="display: none;">Plastique</option>
+                        <option value="" data-lang="fr" style="display: none;">Fer</option>
+                        <option value="" data-lang="fr" style="display: none;">Cuivre</option>
+                        <option value="" data-lang="fr" style="display: none;">Verre</option>
+                        <option value="" data-lang="fr" style="display: none;">Papier</option>
+                        <option value="" data-lang="fr" style="display: none;">Textiles</option>
+                        <option value="" data-lang="fr" style="display: none;">Électronique</option>
+                    </optgroup>
+                </select>
+                
+                <select name="" id="products" data-lang="en" style="display: none;">
+                    <optgroup>
+                        <option disabled selected>Products Categories</option>
+                        <option value="" data-lang="en" style="display: none;">Wood</option>
+                        <option value="" data-lang="en" style="display: none;">Plastic</option>
+                        <option value="" data-lang="en" style="display: none;">Iron</option>
+                        <option value="" data-lang="en" style="display: none;">Copper</option>
+                        <option value="" data-lang="en" style="display: none;">Glass</option>
+                        <option value="" data-lang="en" style="display: none;">Paper</option>
+                        <option value="" data-lang="en" style="display: none;">Textiles</option>
+                        <option value="" data-lang="en" style="display: none;">Electronics</option>
+                    </optgroup>
+                </select>
+                
+                
+                
+                
+                <input type="text" placeholder="تسوق" data-lang="ar">
+                <input type="text" placeholder="Boutique" data-lang="fr" style="display: none;">
+                <input type="text" placeholder="Shop" data-lang="en" style="display: none;">
+                <svg data-lang="ar" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                    <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg>
+                <svg data-lang="fr" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                    <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg>
+                <svg data-lang="en" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                    <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg>
+            </div>
+            <div id="login">
+                <button data-lang="ar" class="login">تسجيل الدخول</button>
+                <button data-lang="ar" class="signup">اشتراك</button>
+                <button data-lang="fr" style="display: none;" class="login">Connexion</button>
+                <button data-lang="fr" style="display: none;" class="signup">Inscription</button>
+                <button data-lang="en" style="display: none;" class="login">Login</button>
+                <button data-lang="en" style="display: none;" class="signup">Sign Up</button>
+                <div id="language-selector">
+                    <select id="language">
+                        <option value="ar">العربية</option>
+                        <option class="fr" value="fr">Français</option>
+                        <option class="en" value="en">English</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </section> 
+
+
+    <!-- Banner Section -->
+    <section id="banner_section" class="text-center">
+        <div class="container">
+            <h1 data-lang="ar" >مرحبًا بكم في دوام</h1>
+            <h1 data-lang="fr" class="fr lt" style="display: none;">Bienvenue à Dawam</h1>
+            <h1 data-lang="en" class="en lt" style="display: none;">Welcome to Dawam</h1>
+
+            <p data-lang="ar">منصة العمل الحر الرائدة</p>
+            <p data-lang="fr" class="fr lt" style="display: none;">La plateforme leader du freelancing</p>
+            <p data-lang="en" class="en lt" style="display: none;">The leading freelancing platform</p>
+
+            <button class="btn btn-primary" data-lang="ar">ابدأ الآن</button>
+            <button class="btn btn-primary fr lt" data-lang="fr" style="display: none;">Commencez maintenant</button>
+            <button class="btn btn-primary en lt" data-lang="en" style="display: none;">Get Started</button>
+        </div>
+    </section>
+
+
+    <!-- About us Section -->
+    <section id="abt_section">
+        <img src="images/corner.png" alt="" class="corner">
+        <img src="images/corner.png" alt="" class="corner">
+        <img src="images/corner.png" alt="" class="corner">
+        <img src="images/corner.png" alt="" class="corner">
+        <div class="container">
+            <img src="images/1.jpg" alt="">
+            <div id="words">
+                <h5 data-lang="ar" class="words">بضع الكلمات عنا</h5>
+                <h5 data-lang="fr" class="words fr lt" style="display: none;">Quelques mots sur nous</h5>
+                <h5 data-lang="en" class="words en lt" style="display: none;">A Few Words About Us</h5>
+                
+                <h2 data-lang="ar" class="history">تاريخ الشركة الناشئة</h2>
+                <h2 data-lang="fr" class="history fr lt" style="display: none;">Histoire de la startup</h2>
+                <h2 data-lang="en" class="history en lt" style="display: none;">Startup History</h2>
+                
+                <p data-lang="ar">دوام هو شركة ناشئة جديدة، أُنشئت في عام 2024 من قِبَل طلاب جامعة محمد بن عبد الله، لتوفير منصة للناس لبيع وشراء المخلفات والأشياء التي يمكن إعادة تدويرها لاستخدامها في الفنون وابتكار منتجات فنية يمكن بيعها عبر نفس التطبيق.</p>
+                <p data-lang="fr" class="fr lt" style="display: none;">Dawam est une nouvelle startup, créée en 2024 par des étudiants de l'Université Mohammed ben Abdellah, visant à fournir une plateforme pour permettre aux gens de vendre et d'acheter des déchets et des objets pouvant être recyclés pour être utilisés dans l'art et créer des produits artistiques que vous pouvez vendre sur la même application.</p>
+                <p data-lang="en" class="en lt" style="display: none;">Dawam is a new startup, created in 2024 by students from Mohammed ben Abdellah University, aiming to provide a platform for people to sell and buy trash and items that can be recycled to be used in art and create artistic products that can be sold on the same app.</p>
+                
+                <h5 data-lang="ar" class="aims">تهدف إلى الفوز ب<span>الجائزة #1</span> في مسابقة <span>إنجاز العرب</span> وأيضاً</h5>
+                <h5 data-lang="fr" class="aims fr lt" style="display: none;">Elle vise à remporter le prix <span>#1</span> au concours <span>INJAZ Al-Arab</span> et aussi à </h5>
+                <h5 data-lang="en" class="aims en lt" style="display: none;">It aims to win the <span>#1</span> prize in the <span>INJAZ Al-Arab</span> competition and also to</h5>
+                
+                <div class="lists" data-lang="ar">
+                    <ul>
+                        <li>المساهمة في حماية البيئة</li>
+                        <li>تقليل النفايات</li>
+                        <li>تحسين وسط العيش</li>
+                        <li>تشجيع الإبداع والابتكار</li>
+                    </ul>
+                    <ul>
+                        <li>ترويج أعمال الفنانين</li>
+                        <li>تسهيل المعاملات </li>
+                        <li>توفير خدمة التوصيل</li>
+                        <li>تقديم عروض مميزة</li>
+                    </ul>
+                </div>
+                <div class="lists fr lt" data-lang="fr" style="display: none;">
+                    <ul>
+                        <li>Contribuer à la protection de l'environnement</li>
+                        <li>Réduire les déchets</li>
+                        <li>Améliorer le cadre de vie</li>
+                        <li>Encourager la créativité et l'innovation</li>
+                    </ul>
+                    <ul>
+                        <li>Promouvoir les œuvres des artistes</li>
+                        <li>Faciliter les transactions</li>
+                        <li>Fournir un service de livraison</li>
+                        <li>Offrir des offres spéciales</li>
+                    </ul>
+                </div>
+                <div class="lists en lt" data-lang="en" style="display: none;">
+                    <ul>
+                        <li>Contribute to environmental protection</li>
+                        <li>Reduce waste</li>
+                        <li>Improve living conditions</li>
+                        <li>Encourage creativity and innovation</li>
+                    </ul>
+                    <ul>
+                        <li>Promote artists' works</li>
+                        <li>Facilitate transactions</li>
+                        <li>Provide delivery services</li>
+                        <li>Offer special deals</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services_section">
+        <h5 class="serve" data-lang="ar">خدمة البيئة</h5>
+        <h5 class="serve fr lt" data-lang="fr" style="display: none;">Service de l'environnement</h5>
+        <h5 class="serve en lt" data-lang="en" style="display: none;">Environmental service</h5>
+
+
+        <h4 class="services" data-lang="ar">خدماتنا</h4>
+        <h4 class="services fr lt" data-lang="fr" style="display: none;">Nos services</h4>
+        <h4 class="services en lt" data-lang="en" style="display: none;">Our services</h4>
+
+        
+        <div id="grid">
+            <div class="card" id="card1">
+                <img src="images/trade.png" alt="">
+                <h5 class="title" data-lang="ar">السوق التجارية</h5>
+                <p data-lang="ar">منصة لبيع وشراء المواد القابلة لإعادة التدوير والقطع الفنية المصنوعة من المواد المعاد تدويرها.</p>
+                <h5 class="readMore" data-lang="ar">قراءة المزيد <i class="fa-solid fa-arrow-left"></i></h5>
+
+                <h5 class="title fr lt" data-lang="fr" style="display: none;">Le marché commercial</h5>
+                <p class="fr lt" data-lang="fr" style="display: none;">Acheter et vendre des matériaux recyclables et des pièces artistiques fabriquées à partir de matériaux recyclés.</p>
+                <h5 class="readMore fr lt" data-lang="fr" style="display: none;">En savoir plus <i class="fa-solid fa-arrow-left lt"></i></h5>
+
+                <h5 class="title en lt" data-lang="en" style="display: none;">Marketplace</h5>
+                <p class="en lt" data-lang="en" style="display: none;">Buy and sell recyclable materials and artistic pieces made from recycled materials.</p>
+                <h5 class="readMore en lt" data-lang="en" style="display: none;">Read more <i class="fa-solid fa-arrow-left lt"></i></h5>
+            </div>
+
+            <div class="card" id="card2">
+                <img src="images/talking.png" alt="">
+                <h5 class="title" data-lang="ar">المجتمع والشبكات</h5>
+                <p data-lang="ar">منصة للتواصل والتعاون وتبادل الأفكار، وتنظيم فعاليات ومعارض افتراضية وواقعية لعرض الأعمال الفنية المصنوعة من المواد المعاد تدويرها.</p>
+                <h5 class="readMore" data-lang="ar">قراءة المزيد <i class="fa-solid fa-arrow-left"></i></h5>
+
+                <h5 class="title fr lt" data-lang="fr" style="display: none;">Communauté et réseaux</h5>
+                <p class="fr lt" data-lang="fr" style="display: none;">La communication, la collaboration et l'échange d'idées, ainsi que pour l'organisation d'événements et d'expositions virtuelles et réelles pour présenter des œuvres d'art.</p>
+                <h5 class="readMore fr lt" data-lang="fr" style="display: none;">En savoir plus <i class="fa-solid fa-arrow-left lt"></i></h5>
+                
+                <h5 class="title en lt" data-lang="en" style="display: none;">Community and networks</h5>
+                <p class="en lt" data-lang="en" style="display: none;">Communication, collaboration, and exchange of ideas, as well as organizing virtual and physical events and exhibitions to showcase artworks.</p>
+                <h5 class="readMore en lt" data-lang="en" style="display: none;">Read more <i class="fa-solid fa-arrow-left lt"></i></h5>
+            </div>
+
+            <div class="card" id="card3">
+                <img src="images/sustainability.png" alt="">
+                <h5 class="title" data-lang="ar">مبادرات الاستدامة</h5>
+                <p data-lang="ar">توفير أدوات لتتبع الأثر البيئي للشراء والبيع على المنصة، والتعاون مع المنظمات غير الحكومية للترويج لإعادة التدوير والاستدامة.</p>
+                <h5 class="readMore" data-lang="ar">قراءة المزيد <i class="fa-solid fa-arrow-left"></i></h5>
+
+                <h5 class="title fr lt" data-lang="fr" style="display: none;">Initiatives de durabilité</h5>
+                <p class="fr lt" data-lang="fr" style="display: none;">Fournir des outils pour suivre l'empreinte environnementale des achats et ventes sur la plateforme, et collaborer avec des organisations pour promouvoir le recyclage et la durabilité.</p>
+                <h5 class="readMore fr lt" data-lang="fr" style="display: none;">En savoir plus <i class="fa-solid fa-arrow-left lt"></i></h5>
+                
+                <h5 class="title en lt" data-lang="en" style="display: none;">Sustainability initiatives</h5>
+                <p class="en lt" data-lang="en" style="display: none;">Providing tools to track the environmental footprint of purchases and sales on the platform, and collaborating with organizations to promote recycling and sustainability.</p>
+                <h5 class="readMore en lt" data-lang="en" style="display: none;">Read more <i class="fa-solid fa-arrow-left lt"></i></h5>
+            </div>
+
+            <div class="card" id="card4">
+                <img src="images/shipping.png" alt="">
+                <h5 class="title" data-lang="ar">الخدمات اللوجستية والتوصيل</h5>
+                <p data-lang="ar">تقديم خدمات استلام المواد القابلة لإعادة التدوير من البائعين وتوصيلها للمشترين، واستخدام مواد تغليف مستدامة لجميع عمليات التوصيل.</p>
+                <h5 class="readMore" data-lang="ar">قراءة المزيد <i class="fa-solid fa-arrow-left"></i></h5>
+
+                <h5 class="title fr lt" data-lang="fr" style="display: none;">Services logistiques</h5>
+                <p class="fr lt" data-lang="fr" style="display: none;">Services de collecte des matériaux recyclables auprès des vendeurs et de livraison aux acheteurs.</p>
+                <h5 class="readMore fr lt" data-lang="fr" style="display: none;">En savoir plus <i class="fa-solid fa-arrow-left lt"></i></h5>
+                
+                <h5 class="title en lt" data-lang="en" style="display: none;">Delivery services</h5>
+                <p class="en lt" data-lang="en" style="display: none;">Collection services for recyclable materials from sellers and delivery to buyers.</p>
+                <h5 class="readMore en lt" data-lang="en" style="display: none;">Read more <i class="fa-solid fa-arrow-left lt"></i></h5>
+            </div>
+        </div>
+        <button class="viewMore" data-lang="ar">عرض المزيد</button>
+        <button class="viewMore fr lt" data-lang="fr" style="display: none;">Montre plus</button>
+        <button class="viewMore en lt" data-lang="en" style="display: none;">Show more</button>
+    </section>
+
+
+
+    <!-- Products Section-->
+    <section id="products_section">
+        <div class = "products">
+            <div class = "container">
+                <h1 class = "lg-title">اكتشف منتجاتنا</h1>
+                <p class = "text-light">تعرف على أحدث القطع الفنية والأدوات المبتكرة المصنوعة من المواد المعاد تدويرها، والتي تجمع بين الإبداع والاستدامة</p>
+
+                <div class = "product-items">
+                    <div class="product" id="prod1">
+                        <div class="image">
+                            <div class="new">جديد</div>
+                        </div>
+                        <div class="description">
+                            <h2>أماندا</h2>
+                            <h5>لوحة ذات جودة عالية</h5>
+                            <h3 class="price">$ 39.00</h3>                           
+                        </div>
+                        <div class="knowMore"><i class="fa-solid fa-circle-info"></i>   التعرف على المزيد</div>
+                        
+                    </div>
+                    <div class="product" id="prod2">
+                        <div class="image"></div>
+                        <div class="description">
+                            <h2>لوحة ثلاثية الأبعاد</h2>
+                            <h5>من ألعاب صغيرة مستعملة</h5>
+                            <h3 class="price">$ 20.00</h3>                           
+                        </div>
+                        <div class="knowMore"><i class="fa-solid fa-circle-info"></i>   التعرف على المزيد</div>
+                        
+                    </div>
+                    <div class="product" id="prod3">
+                        <div class="image"></div>
+                        <div class="description">
+                            <h2>لوحة عصرية</h2>
+                            <h5>من طلاء معاد تدويره</h5>
+                            <h3 class="price">$ 28.00</h3>                           
+                        </div>
+                        <div class="knowMore"><i class="fa-solid fa-circle-info"></i>   التعرف على المزيد</div>
+                        
+                    </div>
+                    <div class="product" id="prod4">
+                        <div class="image"><div class="promotion">-40%</div></div>
+                        <div class="description">
+                            <h2>مواد فنية وحرفية</h2>
+                            <h5>معاد تدويرها من ألعاب مستعملة</h5>
+                            <h3 class="price">$ 6.00  <span class="promo">$ 10.00</span></h3>                           
+                        </div>
+                        <div class="knowMore"><i class="fa-solid fa-circle-info"></i>   التعرف على المزيد</div>
+                        
+                    </div>
+                    <div class="product" id="prod5">
+                        <div class="image"></div>
+                        <div class="description">
+                            <h2>كلب بيشون فريز</h2>
+                            <h5>من مشابك غسيل وأشياء أخرى</h5>
+                            <h3 class="price">$ 9.50</h3>                           
+                        </div>
+                        <div class="knowMore"><i class="fa-solid fa-circle-info"></i>   التعرف على المزيد</div>
+                        
+                    </div>
+                    <div class="product" id="prod6">
+                        <div class="image"></div>
+                        <div class="description">
+                            <h2>قطة تقرأ</h2>
+                            <h5>من أجزاء من الحديد وكرتون</h5>
+                            <h3 class="price">$ 8.00</h3>                           
+                        </div>
+                        <div class="knowMore"><i class="fa-solid fa-circle-info"></i>   التعرف على المزيد</div>
+                        
+                    </div>
+                    <div class="product" id="prod7">
+                        <div class="image"><div class="promotion">-50%</div></div>
+                        <div class="description">
+                            <h2>صناديق كرتون</h2>
+                            <h5>حجم كبير، باللون الأبيض</h5>
+                            <h3 class="price">$ 0.50  <span class="promo">$ 1.00</span></h3>                           
+                        </div>
+                        <div class="knowMore"><i class="fa-solid fa-circle-info"></i>   التعرف على المزيد</div>
+                        
+                    </div>
+                    <div class="product" id="prod8">
+                        <div class="image"></div>
+                        <div class="description">
+                            <h2>قوارير مياه</h2>
+                            <h5>500 مل،  بولي إيثيلين تريفثالات</h5>
+                            <h3 class="price">$ 0.10</h3>                           
+                        </div>
+                        <div class="knowMore"><i class="fa-solid fa-circle-info"></i>   التعرف على المزيد</div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="moreProd">
+                    <button class="viewMore">عرض المزيد</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class = "product-collection">
+        <div class = "container">
+            <h3 class="title_collection">تعرف على مجموعاتنا</h3>
+            <p class="par_collection">استمتع باستكشاف تشكيلاتنا المتنوعة والمبتكرة التي تقدمها داوم</p>
+            <div class = "product-collection-wrapper">
+                <!-- product col left -->
+                <div class = "product-col-left flex">
+                    <div class = "product-col-content first">
+                        <h2 class = "sm-title">مجموعة</h2>
+                        <h2 class = "md-title">قطع إلكترونية</h2>
+                        <p class = "text-light">تعتبر مجموعتنا من القطع الإلكترونية المعاد تدويرها خيارًا مثاليًا للمهتمين بالتكنولوجيا المستدامة والإبداعية. تم اختيار وإعادة تصنيع هذه القطع بعناية، مما يسهم في تقليل النفايات الإلكترونية وتعزيز الاستدامة.</p>
+                        <button type = "button" class = "btn-dark">تسوّق الآن</button>
+                    </div>
+                </div>
+
+                <!-- product col right -->
+                <div class = "product-col-right">
+                    <div class = "product-col-r-top flex">
+                        <div class = "product-col-content second">
+                            <h2 class = "sm-title">مجموعة</h2>
+                            <h2 class = "md-title">منتجات الحدائق</h2>
+                            <p class = "text-light">منتجات الحديقة المعاد تدويرها تمثل خيارًا مثاليًا لأولئك الذين يهتمون بالاستدامة والإبداع في نفس الوقت. تتميز هذه المنتجات بتصاميم فريدة ومتنوعة، حيث يتم إعادة استخدام المواد لإنتاج أثاث وديكورات تضفي جمالًا ووظائف عملية على الحدائق والمساحات الخارجية.</p>
+                            <button type = "button" class = "btn-dark">تسوّق الآن</button>
+                        </div>
+                    </div>
+
+                    <div class = "product-col-r-bottom">
+                        <!-- left -->
+                        <div class = "flex">
+                            <div class = "product-col-content third">
+                                <h2 class = "sm-title">مجموعة</h2>
+                                <h2 class = "md-title">الأثاث والديكور</h2>
+                                <p class = "text-light">الأثاث والديكور المعاد تدويرهما يمثلان خياراً مستداماً ومبتكراً لتحسين المساحات الداخلية. يتميز هذا النوع من الأثاث والديكور بالاستفادة من مواد معاد تدويرها.</p>
+                                <button type = "button" class = "btn-dark">تسوّق الآن</button>
+                            </div>
+                        </div>
+                        <!-- right -->
+                        <div class = "flex">
+                            <div class = "product-col-content fourth">
+                                <h2 class = "sm-title">مجموعة </h2>
+                                <h2 class = "md-title">القطع فنية</h2>
+                                <p class = "text-light">القطع الفنية المعاد تدويرها تمثل خيارًا مبتكرًا ومستدامًا في عالم الفن والديكور. تصنع هذه القطع باستخدام مواد معاد تدويرها، مع تميز التصاميم بفرادتها وجمالها.</p>
+                                <button type = "button" class = "btn-dark">تسوّق الآن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials_section">
+        <div class="container">
+            <h5 data-lang="ar">ماذا يقول</h5>
+            <h5 class="fr lt" data-lang="fr" style="display: none;">Ce que disent</h5>
+            <h5 class="en lt" data-lang="en" style="display: none;">What our</h5>
+
+            <h2 data-lang="ar">عملاؤنا</h2>
+            <h2 class="fr lt" data-lang="fr" style="display: none;">Nos clients</h2>
+            <h2 class="en lt" data-lang="en" style="display: none;">Clients say</h2>
+            
+            <div class="testim">
+                <img src="images/client1.png" alt="">
+                <h4>George Mazir</h4>
+                <p>"I'm impressed by Dawam's dedication to reusing recyclable items and promoting creativity through transforming discarded materials into artworks. Their platform not only supports environmental sustainability but also fosters a community that values both creativity and sustainability."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter_section">
+        <h1 data-lang="ar">النشرة الإخبارية</h1>
+        <h1 class="fr lt" data-lang="fr" style="display: none;">Bulletin d'information</h1>
+        <h1 class="en lt" data-lang="en" style="display: none;">Newsletter</h1>
+
+        <h6 data-lang="ar">اشترك في قائمتنا البريدية</h6>
+        <h6 class="fr lt" data-lang="fr" style="display: none;">Abonnez-vous à notre liste de diffusion</h6>
+        <h6 class="en lt" data-lang="en" style="display: none;">Subscribe to our mailing list</h6>
+
+        <div class="input_container">
+
+            <form class="newsletter-form form1" action="" data-lang="ar">
+                <input type="email" name="" id="email-in" placeholder="أدخل بريدك الإلكتروني" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                <button type="submit" id="real-submit" style="display:none;"></button>
+                <div id="envelope">
+                    <div class="front" id="flap"></div>
+                    <div class="front" id="pocket"></div>
+                    <i class="fa-solid fa-square-check" id="saveLetter"></i>
+                    <div id="letter">
+                        <div id="letter-text">حفظ
+                            <img src="images/logoB.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="newsletter-form form2 fr lt" action="" data-lang="fr" style="display: none;">
+                <input type="email" name="" id="email-in" placeholder="Entrez votre adresse e-mail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                <button type="submit" id="real-submit" style="display:none;"></button>
+                <div id="envelope">
+                    <div class="front" id="flap"></div>
+                    <div class="front" id="pocket"></div>
+                    <i class="fa-solid fa-square-check" id="saveLetter"></i>
+                    <div id="letter">
+                        <div id="letter-text">
+                            <img src="images/logoB.png" alt="">
+                            Sauver
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="newsletter-form form3 en lt" action="" data-lang="en" style="display: none;">
+                <input type="email" name="" id="email-in" placeholder="Enter your email address" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                <button type="submit" id="real-submit" style="display:none;"></button>
+                <div id="envelope">
+                    <div class="front" id="flap"></div>
+                    <div class="front" id="pocket"></div>
+                    <i class="fa-solid fa-square-check" id="saveLetter"></i>
+                    <div id="letter">
+                        <div id="letter-text">
+                            <img src="images/logoB.png" alt="">
+                            Save
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="devider"></div>
+    </section>
+
+    
+
+
+    <footer id="footers_section">
+            <div class="footer_container">
+                <div id="dawam">
+                    <img data-lang="ar" src="images/dawam2.png" alt="">
+                    <img data-lang="fr" class="fr lt" style="display: none;" src="images/dawam4.png" alt="">
+                    <img data-lang="en" class="en lt" style="display: none;" src="images/dawam4.png" alt="">
+                    <p data-lang="ar">أنشئ من طرف طلاب شعبة الهندسة الانظمة الذكية، المتصلة المتنقلة بكلية العلوم والتقنيات بجامعة سيدي محمد بن عبد الله بفاس.</p>
+                    <p data-lang="fr" class="fr lt" style="display: none;">Créé par les étudiants du cycle d'ingénieur d'état en filière des Systèmes Intelligents, Communicants et Mobiles de la Faculté des Sciences et Techniques de l'Université Sidi Mohamed Ben Abdellah à Fès.</p>
+                    <p data-lang="en" class="en lt" style="display: none;">Created by students of the State Engineer cycle in the Intelligent, Communicating, and Mobile Systems program at the Faculty of Science and Technology, University Sidi Mohamed Ben Abdellah in Fez.</p>
+                </div>
+                <div id="quick-links" class="cards without_i">
+                    <h3 class="head_text" data-lang="ar">روابط سريعة</h3>
+                    <h3 class="head_text" data-lang="fr" class="fr lt" style="display: none;">Liens rapides</h3>
+                    <h3 class="head_text" data-lang="en" class="en lt" style="display: none;">Quick Links</h3>
+
+                    <ul data-lang="ar">
+                        <li >معلومات عنا</li>
+                        <li>فئة المنتجات</li>
+                        <li>منتجاتنا</li>
+                        <li>كيف نفعلها</li>
+                    </ul>
+
+                    <ul data-lang="en" class="en lt" style="display: none;">
+                        <li>About Us</li>
+                        <li>Product Category</li>
+                        <li>Our Products</li>
+                        <li>How We Do It</li>
+                    </ul>
+
+                    <ul data-lang="fr" class="fr lt" style="display: none;">
+                        <li>À propos de nous</li>
+                        <li>Catégorie de produits</li>
+                        <li>Nos produits</li>
+                        <li>Comment nous le faisons</li>
+                    </ul>
+
+                </div>
+                <div id="useful-links" class="cards without_i">
+                    <h3 class="head_text" data-lang="ar">روابط مفيدة</h3>
+                    <h3 class="head_text" data-lang="fr" class="fr lt" style="display: none;">Liens utiles</h3>
+                    <h3 class="head_text" data-lang="en" class="en lt" style="display: none;">Useful Links</h3>
+
+                    <ul data-lang="ar">
+                        <li>اتصل بنا</li>
+                        <li>الشروط والأحكام</li>
+                        <li>سياسة الخصوصية</li>
+                        <li>سياسة ملفات تعريف الارتباط</li>
+                    </ul>
+
+                    <ul data-lang="en" class="en lt" style="display: none;">
+                        <li>Contact Us</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookies Policy</li>
+                    </ul>
+
+                    <ul data-lang="fr" class="fr lt" style="display: none;">
+                        <li>Nous contacter</li>
+                        <li>Conditions générales</li>
+                        <li>Politique de confidentialité</li>
+                        <li>Politique des cookies</li>
+                    </ul>
+
+                </div>
+                <div id="contact-us" class="cards">
+                    <h3 class="head_text" data-lang="ar">اتصل بنا</h3>
+                    <h3 class="head_text" data-lang="fr" class="fr lt" style="display: none;">Contact</h3>
+                    <h3 class="head_text" data-lang="en" class="en lt" style="display: none;">Contact Us</h3>
+
+                    <ul data-lang="ar">
+                        <li><i class="fa-solid fa-location-dot"></i>كلية العلوم والتقنيات بفاس، ص.ب. 2202 - طريق إيموزار، فاس</li>
+                        <li><i class="fa-solid fa-phone"></i>212-612345678+</li>
+                        <li><i class="fa-solid fa-envelope"></i>dawam@gmail.com</li>
+                    </ul>
+
+                    <ul data-lang="en" class="en lt" style="display: none;">
+                        <li><i class="fa-solid fa-location-dot"></i>Faculty of Science and Technology, Fez, P.O. Box 2202 - Route d’Imouzzer, Fez</li>
+                        <li><i class="fa-solid fa-phone"></i>212-612345678+</li>
+                        <li><i class="fa-solid fa-envelope"></i>dawam@gmail.com</li>
+                    </ul>
+
+                    <ul data-lang="fr" class="fr lt" style="display: none;">
+                        <li><i class="fa-solid fa-location-dot"></i>Faculté des Sciences et Techniques, Fès, B.P. 2202 - Route d’Imouzzer, Fès</li>
+                        <li><i class="fa-solid fa-phone"></i>212-612345678+</li>
+                        <li><i class="fa-solid fa-envelope"></i>dawam@gmail.com</li>
+                    </ul>
+
+                </div>
+                <div id="right-contact">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="social-icons">
+                                
+                                <a href="https://facebook.com/dawam" target="_blank">                                    
+                                    <i class="fa-brands fa-facebook-f social-icon"></i>
+                                </a>
+                                <a href="https://twitter.com/dawam" target="_blank">
+                                    <i class="fa-brands fa-x-twitter social-icon"></i>
+                                </a>
+                                <a href="https://www.youtube.com/@DAWAMINJAZ" target="_blank">
+                                    <i class="fa-brands fa-youtube social-icon"></i>
+                                </a>
+                                <a href="" target="">
+                                    <i class="fa-brands fa-whatsapp social-icon"></i>
+                                </a>
+                                <a href="https://instagram.com/dawam" target="_blank">
+                                    <i class="fa-brands fa-instagram social-icon"></i>
+                                </a>
+                                <a href="https://linkedin.com/company/dawam" target="_blank">
+                                    <i class="fa-brands fa-linkedin-in social-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p data-lang="ar" class="copyrights">كل الحقوق محفوظة &copy; 2024 دوام</p>
+                    <p data-lang="fr" class="copyrights fr lt" style="display: none;">Tous droits réservés &copy; 2024 Dawam</p>
+                    <p data-lang="en" class="copyrights en lt" style="display: none;">All rights reserved &copy; 2024 Dawam</p>                             
+                </div>
+           </div> 
+    </footer>
+
+   
+    <script>
+        function handleLanguageChange() {
+            const selectedLanguage = this.value;
+            const elements = document.querySelectorAll('[data-lang]');
+            const productsSelector = document.getElementById('products');
+            const selectedPlaceholder = productsSelector.getAttribute(`placeholder-${selectedLanguage}`);
+    
+            elements.forEach(element => {
+                element.style.display = element.getAttribute('data-lang') === selectedLanguage ? '' : 'none';
+            });
+    
+            const isRTL = selectedLanguage === 'ar';
+            document.body.style.direction = isRTL ? 'rtl' : 'ltr';
+            document.querySelector('.footer_container').style.direction = isRTL ? 'rtl' : 'ltr';
+            document.querySelector('#right-contact').style.direction = 'rtl';
+            document.body.classList.toggle('rtl', isRTL);
+    
+            // Set font family based on selected language
+            document.body.style.fontFamily = isRTL ? "'Noto Kufi Arabic', sans-serif" : "'Open Sans', sans-serif";
+    
+            productsSelector.setAttribute('placeholder', selectedPlaceholder);
+    
+            const productsLabel = document.querySelector('#products option[enabled]');
+            productsLabel.textContent = selectedPlaceholder;
+        }
+    
+        document.addEventListener('DOMContentLoaded', function () {
+    
+            function handleScroll() {
+                var navbar = document.getElementById('navbar_section');
+                var elements = navbar.querySelectorAll('li');
+                var navbarLogoAr = navbar.querySelector('.logoAr');
+                var navbarLogoFr = navbar.querySelector('.logoFr');
+                var navbarLogoEn = navbar.querySelector('.logoEn');
+                var sticky = navbar.offsetTop;
+
+                if (window.pageYOffset > sticky) {
+                    navbar.style.position = 'fixed';
+                    navbar.style.top = '0';
+                    navbar.style.backgroundColor = 'white';
+                    navbar.style.boxShadow = "0 0 20px rgba(0,0,0,.15)"; 
+                    navbar.classList.add('moving');
+                    navbar.classList.remove('fixed');
+
+                    navbarLogoAr.src = 'images/dawam3.png';
+                    navbarLogoFr.src = 'images/dawam5.png';
+                    navbarLogoEn.src = 'images/dawam5.png';
+                    
+                } else {
+                    navbar.style.position = 'absolute';
+                    navbar.style.top = '';
+                    navbar.style.backgroundColor = 'transparent';
+                    navbar.style.boxShadow = "none"; 
+                    navbar.classList.add('fixed');
+                    navbar.classList.remove('moving');
+
+                    navbarLogoAr.src = 'images/dawam2.png';
+                    navbarLogoFr.src = 'images/dawam4.png';
+                    navbarLogoEn.src = 'images/dawam4.png';
+                }
+            }
+
+            window.addEventListener('scroll', handleScroll);
+            const languageSelector = document.getElementById('language');
+            languageSelector.addEventListener('change', handleLanguageChange);
+
+            languageSelector.dispatchEvent(new Event('change'));
+
+            // document.getElementById('envelope').addEventListener('click', function() {
+            //     document.getElementById('real-submit').click();
+            //     document.getElementById('email-in').style.width = '0';
+            //     document.getElementById('email-in').style.display = 'none';
+            // });
+
+
+            // Selecting forms by their class name
+            let form1 = document.querySelector('.form1');  // Use querySelector to select the first element with class 'form1'
+            let form2 = document.querySelector('.form2');  // Use querySelector to select the first element with class 'form2'
+            let form3 = document.querySelector('.form3');  // Use querySelector to select the first element with class 'form3'
+
+            // Putting all forms in an array
+            const FormArray = [form1, form2, form3];
+
+            // Adding event listeners to prevent form submission
+            FormArray.forEach(oneForm => {
+                oneForm.addEventListener('submit', function(event) {
+                    event.preventDefault();  // Prevent the form from submitting
+                });
+            });
+
+            // Adding click event listener to 'envelope' element inside each form
+            FormArray.forEach(oneForm => {
+                let envelope = oneForm.querySelector('#envelope');  // Select the envelope element in each form
+                envelope.addEventListener('click', function() {
+                    let emailInput = oneForm.querySelector('#email-in');  // Select the email input in each form
+                    let realSubmit = oneForm.querySelector('#real-submit');  // Select the real submit button in each form
+                    let saveLetter = oneForm.querySelector('#saveLetter');  // Select the save letter element in each form
+
+                    // Programmatically click the real submit button
+                    realSubmit.click();
+
+                    // Check if the email input is valid
+                    if (emailInput.checkValidity()) {
+                        // Apply CSS transitions and effects to each form in FormArray
+                        FormArray.forEach(form => {
+                            let input = form.querySelector('#email-in');
+                            let envelope = form.querySelector('#envelope');
+                            let saveLetter = form.querySelector('#saveLetter');
+
+                            input.style.width = '0';
+                            input.style.position = 'relative';
+                            input.style.right = '60px';
+                            input.style.padding = '0';
+
+                            emailInput.addEventListener('transitionend', function() {
+                                input.value = '';
+                                saveLetter.style.opacity = '1';
+                                envelope.style.pointerEvents = 'none';
+                            }, { once: true });  // Remove the event listener after it has been triggered once
+                        });
+                    }
+                });
+            });
+
+
+
+        });
+    </script>
+    
+    
+
+
+</body>
+</html>
